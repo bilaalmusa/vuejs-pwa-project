@@ -1,7 +1,7 @@
 # vuejs-pwa-project
 A takeaway/restaurant finder built as a PWA using VueJS
 
-# vuejs-pwa-project
+
 
 ## Project setup
 ```
