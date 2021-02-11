@@ -1,12 +1,15 @@
 <template>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <div class="home">
     <img width="800" alt="DineHalal Logo" src="../assets/logo.png" class="responsive">
     <div id="welcome">
       <h2>Welcome to</h2>
       <h1>Dine Halal</h1>
+      <h3>Enter your postcode to find a halal restaurant or takeaway near you! </h3>
     </div>
-    <input type="text" v-model="search" placeholder="Type your postcode!">
+    <input type="text" v-model="search" placeholder="Type Your Postcode!">
+    <i class="fa fa-location-arrow fa-2x" aria-hidden="true" @click="locatorButtonPressed"></i>
     <div id="box" v-for="Restaurants in filteredRestaurants" :key="Restaurants.id">
     <!-- <div v-for="Restaurants in allrestaurants" :key="Restaurants.id"> -->
       <restaurants :Restaurants="Restaurants"> </restaurants>
@@ -20,6 +23,22 @@
 import Restaurants from '@/components/Restaurants.vue';
 
 export default {
+  methods: {
+    locatorButtonPressed() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          console.log(position.coords.latitude);
+          console.log(position.coords.longitude);
+        },
+        (error) => {
+          console.log(error.message);
+        });
+      } else {
+        console.log('Your broswer does not support the geolocation API');
+      }
+    },
+
+  },
   name: 'Home',
   components: { Restaurants },
   data() {
@@ -82,7 +101,7 @@ export default {
 }
 h1{
   color:  #017840;
-  font-size: 350%;
+  font-size: 275%;
 }
 input {
 
@@ -91,6 +110,7 @@ input {
   padding: 12px 20px;
   display: inline-block;
   border: 2px solid #017840;
+  border-radius: 30px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -106,7 +126,9 @@ input {
 #box {
   width: 80%;
   padding: 30px 30px;
-  box-shadow:  6px 6px 10px 12px #ccc;
+  -webkit-box-shadow: 0 0 10px #017840;
+  box-shadow: 0 0 10px  #017840;
+  /* box-shadow:  6px 6px 6px 6px #017840; */
   border: 4px solid #017840;
   border-radius: 15px;
   margin: 20px 0;
