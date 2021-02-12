@@ -106,6 +106,12 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;

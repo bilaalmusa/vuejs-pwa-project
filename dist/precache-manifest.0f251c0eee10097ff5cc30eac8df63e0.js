@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "913b857fa2bb60de042a",
-    "url": "/css/app.84434385.css"
+    "revision": "c8faf9f4bfc798ddd11c",
+    "url": "/css/app.c0fa955b.css"
   },
   {
-    "revision": "913b857fa2bb60de042a",
-    "url": "/css/app.84434385.css.map"
+    "revision": "c8faf9f4bfc798ddd11c",
+    "url": "/css/app.c0fa955b.css.map"
   },
   {
     "revision": "ef5867108998e43342f52bc4ba93e477",
@@ -104,16 +104,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.f7a4b2af.png"
   },
   {
-    "revision": "b7fc9a93721107276981d1ce268d8483",
+    "revision": "cb3330bd87814784838c55281c908542",
     "url": "/index.html"
   },
   {
-    "revision": "913b857fa2bb60de042a",
-    "url": "/js/app.0baec0f3.js"
+    "revision": "c8faf9f4bfc798ddd11c",
+    "url": "/js/app.2b9f52fa.js"
   },
   {
-    "revision": "913b857fa2bb60de042a",
-    "url": "/js/app.0baec0f3.js.map"
+    "revision": "c8faf9f4bfc798ddd11c",
+    "url": "/js/app.2b9f52fa.js.map"
   },
   {
     "revision": "988be00de1d7a433f822",
@@ -150,5 +150,45 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cdee65c9a745d0e539b13911afa2b7ce",
     "url": "/site.webmanifest"
+  },
+  {
+    "revision": "813dd69c06d788fc126f55c012af2d25",
+    "url": "/splashscreens/ipad_splash.png"
+  },
+  {
+    "revision": "829c93121f7ff99b75f59ced6ff4b738",
+    "url": "/splashscreens/ipadpro1_splash.png"
+  },
+  {
+    "revision": "33fc0232aa57e40fa0885bd83b1d3782",
+    "url": "/splashscreens/ipadpro2_splash.png"
+  },
+  {
+    "revision": "bad14b999ab7296ab134f82f4aace824",
+    "url": "/splashscreens/ipadpro3_splash.png"
+  },
+  {
+    "revision": "06e24889a4371279973551aaaeab3fdc",
+    "url": "/splashscreens/iphone5_splash.png"
+  },
+  {
+    "revision": "6bbf60552669a619d8387bc88c56951c",
+    "url": "/splashscreens/iphone6_splash.png"
+  },
+  {
+    "revision": "57455c967e679c9b6aa7b8c781a436e0",
+    "url": "/splashscreens/iphoneplus_splash.png"
+  },
+  {
+    "revision": "e81fc76eb668ffa36a693c7d9d0fe5e5",
+    "url": "/splashscreens/iphonex_splash.png"
+  },
+  {
+    "revision": "fa86aa6a807fbd786d0db332d40016ff",
+    "url": "/splashscreens/iphonexr_splash.png"
+  },
+  {
+    "revision": "1cd1183ccae83b865c15acffb8cb6e89",
+    "url": "/splashscreens/iphonexsmax_splash.png"
   }
 ]);
