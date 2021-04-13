@@ -62,8 +62,8 @@ export default {
 
 <style>
 .btn{
-    padding: 1%;
-    margin-top: 1%;
+    padding: 2%;
+    margin-top: 2%;
     background: lightgreen;
     border: none;
     border-radius: 20%;

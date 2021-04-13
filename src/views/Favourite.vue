@@ -10,6 +10,7 @@
                 <h4>{{myRes.city}}</h4>
                 <h5>{{myRes.postcode}}</h5>
             </article>
+            <button @click="UnsaveRestaurant(Restaurants.id)" class="btn">Remove</button>
         </div>
     </div>
 </template>
