@@ -2,8 +2,8 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
     ? '/vuejs-pwa-project/'
-    : '/'
-}
+    : '/',
+};
 
 module.exports = {
   pwa: {
@@ -11,7 +11,7 @@ module.exports = {
     workboxOptions: {
       skipWaiting: true,
       clientsClaim: true,
-      exclude: [/_redirects/]
+      exclude: [/_redirects/],
     },
   },
 };
