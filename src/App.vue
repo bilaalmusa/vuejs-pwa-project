@@ -7,6 +7,11 @@
       name="Dine Halal"
       :navLinks="[
         {
+          name: 'Favourites',
+          link: '/favourite',
+          dropdown: false,
+        },
+        {
           name: 'Home',
           link: '/',
           dropdown: false,
