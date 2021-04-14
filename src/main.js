@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { createApp } from 'vue';
-import firebase from 'firebase/app';
-import 'firebase/messaging';
+// import firebase from 'firebase/app';
+// import 'firebase/messaging';
 import App from './App.vue';
 import router from './router';
 import './registerServiceWorker';
