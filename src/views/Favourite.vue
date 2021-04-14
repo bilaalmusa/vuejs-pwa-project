@@ -9,8 +9,8 @@
                 <h3>{{myRes.body}}</h3>
                 <h4>{{myRes.city}}</h4>
                 <h5>{{myRes.postcode}}</h5>
+                <button @click="UnsaveRestaurant(myRes.id)" class="btn">Remove</button>
             </article>
-            <button @click="UnsaveRestaurant(Restaurants.id)" class="btn">Remove</button>
         </div>
     </div>
 </template>
@@ -23,9 +23,15 @@ export default {
       myRestaurants: [],
     };
   },
+  methods:{
+    UnsaveRestaurant(id) {
+      var index = this.myRestaurants.findIndex(x => x.id === id);
+      this.myRestaurants.splice(index,1);
+      localStorage.setItem('myRestaurants', JSON.stringify(this.myRestaurants));
+    },
+  },
   mounted(){
     this.myRestaurants = JSON.parse(localStorage.getItem('myRestaurants'));
-    console.log(this.myRestaurants);
   }
 };
 </script>
