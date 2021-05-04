@@ -3,7 +3,7 @@ function sendNotification(){
     $url ="https://fcm.googleapis.com/fcm/send";
 
     $fields=array(
-        "to"=>'YOUR DEVICE TOKEN',
+        "to"=>'fQZQiiX05NXNfoh9AcXMwL:APA91bGkofsV-NonBRBau-Ay4u9LKhREACXq9W2fcbNhmVt9EGkc6XO8meoCdS_ydNsA-aB0M4stuQgOuqMwgSWOiPTsdhRSFD3g0uMkUW-x23JbZQ6FI22PZ7HFi0FGZrIA-zsyTPgE',
         "notification"=>array(
             "body"=>"Testing Notification",
             "title"=>"Testing",
